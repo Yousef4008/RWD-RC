@@ -1,0 +1,631 @@
+00:56:27 **** Clean-only build of configuration Debug for project CarUnit ****
+make clean 
+rm -rf  CarUnit.hex  ./MCAL/USART/usart.o  ./MCAL/TIMER1/timer1.o  ./MCAL/SPI/spi.o  ./MCAL/GPIO/gpio.o  ./HAL/SERVO/servo.o  ./HAL/NRF/nrf.o  ./HAL/LEDS/LEDs.o  ./HAL/L293D/l293d.o  ./HAL/BUZZER/buzzer.o  ./Car_APP.o  sizedummy  CarUnit.lss  ./MCAL/USART/usart.d  ./MCAL/TIMER1/timer1.d  ./MCAL/SPI/spi.d  ./MCAL/GPIO/gpio.d  ./HAL/SERVO/servo.d  ./HAL/NRF/nrf.d  ./HAL/LEDS/LEDs.d  ./HAL/L293D/l293d.d  ./HAL/BUZZER/buzzer.d  ./Car_APP.d  CarUnit.elf
+ 
+00:56:38 **** Build of configuration Debug for project CarUnit ****
+make all 
+Building file: ../MCAL/USART/usart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/USART/usart.d" -MT"MCAL/USART/usart.o" -c -o "MCAL/USART/usart.o" "../MCAL/USART/usart.c"
+Finished building: ../MCAL/USART/usart.c
+ 
+Building file: ../MCAL/TIMER1/timer1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/TIMER1/timer1.d" -MT"MCAL/TIMER1/timer1.o" -c -o "MCAL/TIMER1/timer1.o" "../MCAL/TIMER1/timer1.c"
+Finished building: ../MCAL/TIMER1/timer1.c
+ 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+Finished building: ../MCAL/SPI/spi.c
+ 
+Building file: ../MCAL/GPIO/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/GPIO/gpio.d" -MT"MCAL/GPIO/gpio.o" -c -o "MCAL/GPIO/gpio.o" "../MCAL/GPIO/gpio.c"
+Finished building: ../MCAL/GPIO/gpio.c
+ 
+Building file: ../HAL/SERVO/servo.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/SERVO/servo.d" -MT"HAL/SERVO/servo.o" -c -o "HAL/SERVO/servo.o" "../HAL/SERVO/servo.c"
+Finished building: ../HAL/SERVO/servo.c
+ 
+Building file: ../HAL/NRF/nrf.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/NRF/nrf.d" -MT"HAL/NRF/nrf.o" -c -o "HAL/NRF/nrf.o" "../HAL/NRF/nrf.c"
+In file included from ../HAL/NRF/nrf.c:16:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/NRF/nrf.c:143: warning: 'NRF24_readRegMulti' defined but not used
+Finished building: ../HAL/NRF/nrf.c
+ 
+Building file: ../HAL/LEDS/LEDs.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/LEDS/LEDs.d" -MT"HAL/LEDS/LEDs.o" -c -o "HAL/LEDS/LEDs.o" "../HAL/LEDS/LEDs.c"
+Finished building: ../HAL/LEDS/LEDs.c
+ 
+Building file: ../HAL/L293D/l293d.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/L293D/l293d.d" -MT"HAL/L293D/l293d.o" -c -o "HAL/L293D/l293d.o" "../HAL/L293D/l293d.c"
+Finished building: ../HAL/L293D/l293d.c
+ 
+Building file: ../HAL/BUZZER/buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/BUZZER/buzzer.d" -MT"HAL/BUZZER/buzzer.o" -c -o "HAL/BUZZER/buzzer.o" "../HAL/BUZZER/buzzer.c"
+Finished building: ../HAL/BUZZER/buzzer.c
+ 
+Building file: ../Car_APP.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Car_APP.d" -MT"Car_APP.o" -c -o "Car_APP.o" "../Car_APP.c"
+In file included from ../Car_APP.c:18:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/NRF/nrf.h:86: warning: 'NRF24_writeReg' declared 'static' but never defined
+../HAL/NRF/nrf.h:92: warning: 'NRF24_writeRegMulti' declared 'static' but never defined
+../HAL/NRF/nrf.h:98: warning: 'NRF24_readReg' declared 'static' but never defined
+../HAL/NRF/nrf.h:104: warning: 'NRF24_readRegMulti' declared 'static' but never defined
+../HAL/NRF/nrf.h:110: warning: 'NRF24_sendCmd' declared 'static' but never defined
+../HAL/NRF/nrf.h:116: warning: 'NRF24_CSN_select' declared 'static' but never defined
+../HAL/NRF/nrf.h:122: warning: 'NRF24_CSN_unselect' declared 'static' but never defined
+../HAL/NRF/nrf.h:128: warning: 'NRF24_chipEnable' declared 'static' but never defined
+../HAL/NRF/nrf.h:134: warning: 'NRF24_chipDisable' declared 'static' but never defined
+Finished building: ../Car_APP.c
+ 
+Building target: CarUnit.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,CarUnit.map -mmcu=atmega32 -o "CarUnit.elf"  ./MCAL/USART/usart.o  ./MCAL/TIMER1/timer1.o  ./MCAL/SPI/spi.o  ./MCAL/GPIO/gpio.o  ./HAL/SERVO/servo.o  ./HAL/NRF/nrf.o  ./HAL/LEDS/LEDs.o  ./HAL/L293D/l293d.o  ./HAL/BUZZER/buzzer.o  ./Car_APP.o   
+Finished building target: CarUnit.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S CarUnit.elf  >"CarUnit.lss"
+Finished building: CarUnit.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex CarUnit.elf  "CarUnit.hex"
+Finished building: CarUnit.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CarUnit.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9378 bytes (28.6% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:57:13 **** Incremental Build of configuration Debug for project CarUnit ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CarUnit.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9378 bytes (28.6% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:57:19 **** Incremental Build of configuration Debug for project CarUnit ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CarUnit.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9378 bytes (28.6% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:57:21 **** Incremental Build of configuration Debug for project CarUnit ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CarUnit.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9378 bytes (28.6% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:57:36 **** Incremental Build of configuration Debug for project CarUnit ****
+make all 
+Building file: ../HAL/NRF/nrf.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/NRF/nrf.d" -MT"HAL/NRF/nrf.o" -c -o "HAL/NRF/nrf.o" "../HAL/NRF/nrf.c"
+In file included from ../HAL/NRF/nrf.c:16:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/NRF/nrf.h:104: warning: 'NRF24_readRegMulti' declared 'static' but never defined
+Finished building: ../HAL/NRF/nrf.c
+ 
+Building target: CarUnit.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,CarUnit.map -mmcu=atmega32 -o "CarUnit.elf"  ./MCAL/USART/usart.o  ./MCAL/TIMER1/timer1.o  ./MCAL/SPI/spi.o  ./MCAL/GPIO/gpio.o  ./HAL/SERVO/servo.o  ./HAL/NRF/nrf.o  ./HAL/LEDS/LEDs.o  ./HAL/L293D/l293d.o  ./HAL/BUZZER/buzzer.o  ./Car_APP.o   
+Finished building target: CarUnit.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S CarUnit.elf  >"CarUnit.lss"
+Finished building: CarUnit.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex CarUnit.elf  "CarUnit.hex"
+Finished building: CarUnit.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CarUnit.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9260 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:57:48 **** Incremental Build of configuration Debug for project CarUnit ****
+make all 
+Building file: ../HAL/NRF/nrf.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/NRF/nrf.d" -MT"HAL/NRF/nrf.o" -c -o "HAL/NRF/nrf.o" "../HAL/NRF/nrf.c"
+In file included from ../HAL/NRF/nrf.c:16:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/NRF/nrf.c
+ 
+Building file: ../Car_APP.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Car_APP.d" -MT"Car_APP.o" -c -o "Car_APP.o" "../Car_APP.c"
+In file included from ../Car_APP.c:18:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/NRF/nrf.h:86: warning: 'NRF24_writeReg' declared 'static' but never defined
+../HAL/NRF/nrf.h:92: warning: 'NRF24_writeRegMulti' declared 'static' but never defined
+../HAL/NRF/nrf.h:98: warning: 'NRF24_readReg' declared 'static' but never defined
+../HAL/NRF/nrf.h:104: warning: 'NRF24_sendCmd' declared 'static' but never defined
+../HAL/NRF/nrf.h:110: warning: 'NRF24_CSN_select' declared 'static' but never defined
+../HAL/NRF/nrf.h:116: warning: 'NRF24_CSN_unselect' declared 'static' but never defined
+../HAL/NRF/nrf.h:122: warning: 'NRF24_chipEnable' declared 'static' but never defined
+../HAL/NRF/nrf.h:128: warning: 'NRF24_chipDisable' declared 'static' but never defined
+Finished building: ../Car_APP.c
+ 
+Building target: CarUnit.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,CarUnit.map -mmcu=atmega32 -o "CarUnit.elf"  ./MCAL/USART/usart.o  ./MCAL/TIMER1/timer1.o  ./MCAL/SPI/spi.o  ./MCAL/GPIO/gpio.o  ./HAL/SERVO/servo.o  ./HAL/NRF/nrf.o  ./HAL/LEDS/LEDs.o  ./HAL/L293D/l293d.o  ./HAL/BUZZER/buzzer.o  ./Car_APP.o   
+Finished building target: CarUnit.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S CarUnit.elf  >"CarUnit.lss"
+Finished building: CarUnit.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex CarUnit.elf  "CarUnit.hex"
+Finished building: CarUnit.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CarUnit.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9260 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:57:51 **** Incremental Build of configuration Debug for project CarUnit ****
+make all 
+Building file: ../HAL/NRF/nrf.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/NRF/nrf.d" -MT"HAL/NRF/nrf.o" -c -o "HAL/NRF/nrf.o" "../HAL/NRF/nrf.c"
+In file included from ../HAL/NRF/nrf.c:13:
+../HAL/NRF/nrf.h:122: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'static'
+In file included from ../HAL/NRF/nrf.c:16:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/NRF/nrf.c: In function 'NRF24_init':
+../HAL/NRF/nrf.c:49: warning: implicit declaration of function 'NRF24_chipEnable'
+../HAL/NRF/nrf.c: At top level:
+../HAL/NRF/nrf.c:72: warning: conflicting types for 'NRF24_chipEnable'
+../HAL/NRF/nrf.c:72: error: static declaration of 'NRF24_chipEnable' follows non-static declaration
+../HAL/NRF/nrf.c:49: error: previous implicit declaration of 'NRF24_chipEnable' was here
+make: *** [HAL/NRF/nrf.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:57:54 **** Incremental Build of configuration Debug for project CarUnit ****
+make all 
+Building file: ../HAL/NRF/nrf.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/NRF/nrf.d" -MT"HAL/NRF/nrf.o" -c -o "HAL/NRF/nrf.o" "../HAL/NRF/nrf.c"
+In file included from ../HAL/NRF/nrf.c:16:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/NRF/nrf.c
+ 
+Building file: ../Car_APP.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Car_APP.d" -MT"Car_APP.o" -c -o "Car_APP.o" "../Car_APP.c"
+In file included from ../Car_APP.c:18:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/NRF/nrf.h:86: warning: 'NRF24_writeReg' declared 'static' but never defined
+../HAL/NRF/nrf.h:92: warning: 'NRF24_writeRegMulti' declared 'static' but never defined
+../HAL/NRF/nrf.h:98: warning: 'NRF24_readReg' declared 'static' but never defined
+../HAL/NRF/nrf.h:104: warning: 'NRF24_sendCmd' declared 'static' but never defined
+../HAL/NRF/nrf.h:110: warning: 'NRF24_CSN_select' declared 'static' but never defined
+../HAL/NRF/nrf.h:116: warning: 'NRF24_CSN_unselect' declared 'static' but never defined
+../HAL/NRF/nrf.h:122: warning: 'NRF24_chipEnable' declared 'static' but never defined
+../HAL/NRF/nrf.h:128: warning: 'NRF24_chipDisable' declared 'static' but never defined
+Finished building: ../Car_APP.c
+ 
+Building target: CarUnit.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,CarUnit.map -mmcu=atmega32 -o "CarUnit.elf"  ./MCAL/USART/usart.o  ./MCAL/TIMER1/timer1.o  ./MCAL/SPI/spi.o  ./MCAL/GPIO/gpio.o  ./HAL/SERVO/servo.o  ./HAL/NRF/nrf.o  ./HAL/LEDS/LEDs.o  ./HAL/L293D/l293d.o  ./HAL/BUZZER/buzzer.o  ./Car_APP.o   
+Finished building target: CarUnit.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S CarUnit.elf  >"CarUnit.lss"
+Finished building: CarUnit.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex CarUnit.elf  "CarUnit.hex"
+Finished building: CarUnit.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CarUnit.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9260 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:57:56 **** Incremental Build of configuration Debug for project CarUnit ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CarUnit.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9260 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:58:14 **** Incremental Build of configuration Debug for project CarUnit ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CarUnit.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9260 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:58:14 **** Clean-only build of configuration Debug for project ControllerUnit ****
+make clean 
+rm -rf  Controller.hex  ./MCAL/USART/usart.o  ./MCAL/SPI/spi.o  ./MCAL/GPIO/gpio.o  ./MCAL/ADC/adc.o  ./HAL/POT/pot.o  ./HAL/NRF/nrf.o  ./HAL/LEDS/LEDs.o  ./HAL/BUTTONS/buttons.o  ./Controller_APP.o  sizedummy  Controller.lss  ./MCAL/USART/usart.d  ./MCAL/SPI/spi.d  ./MCAL/GPIO/gpio.d  ./MCAL/ADC/adc.d  ./HAL/POT/pot.d  ./HAL/NRF/nrf.d  ./HAL/LEDS/LEDs.d  ./HAL/BUTTONS/buttons.d  ./Controller_APP.d  Controller.elf
+ 
+00:58:14 **** Build of configuration Debug for project ControllerUnit ****
+make all 
+Building file: ../MCAL/USART/usart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/USART/usart.d" -MT"MCAL/USART/usart.o" -c -o "MCAL/USART/usart.o" "../MCAL/USART/usart.c"
+Finished building: ../MCAL/USART/usart.c
+ 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+Finished building: ../MCAL/SPI/spi.c
+ 
+Building file: ../MCAL/GPIO/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/GPIO/gpio.d" -MT"MCAL/GPIO/gpio.o" -c -o "MCAL/GPIO/gpio.o" "../MCAL/GPIO/gpio.c"
+Finished building: ../MCAL/GPIO/gpio.c
+ 
+Building file: ../MCAL/ADC/adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/ADC/adc.d" -MT"MCAL/ADC/adc.o" -c -o "MCAL/ADC/adc.o" "../MCAL/ADC/adc.c"
+In file included from ../MCAL/ADC/adc.c:16:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MCAL/ADC/adc.c: In function 'ADC_init':
+../MCAL/ADC/adc.c:27: warning: enumeration value 'Ext_AREF' not handled in switch
+Finished building: ../MCAL/ADC/adc.c
+ 
+Building file: ../HAL/POT/pot.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/POT/pot.d" -MT"HAL/POT/pot.o" -c -o "HAL/POT/pot.o" "../HAL/POT/pot.c"
+Finished building: ../HAL/POT/pot.c
+ 
+Building file: ../HAL/NRF/nrf.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/NRF/nrf.d" -MT"HAL/NRF/nrf.o" -c -o "HAL/NRF/nrf.o" "../HAL/NRF/nrf.c"
+In file included from ../HAL/NRF/nrf.c:16:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/NRF/nrf.c:143: warning: 'NRF24_readRegMulti' defined but not used
+Finished building: ../HAL/NRF/nrf.c
+ 
+Building file: ../HAL/LEDS/LEDs.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/LEDS/LEDs.d" -MT"HAL/LEDS/LEDs.o" -c -o "HAL/LEDS/LEDs.o" "../HAL/LEDS/LEDs.c"
+Finished building: ../HAL/LEDS/LEDs.c
+ 
+Building file: ../HAL/BUTTONS/buttons.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/BUTTONS/buttons.d" -MT"HAL/BUTTONS/buttons.o" -c -o "HAL/BUTTONS/buttons.o" "../HAL/BUTTONS/buttons.c"
+Finished building: ../HAL/BUTTONS/buttons.c
+ 
+Building file: ../Controller_APP.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Controller_APP.d" -MT"Controller_APP.o" -c -o "Controller_APP.o" "../Controller_APP.c"
+In file included from ../Controller_APP.c:18:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/NRF/nrf.h:86: warning: 'NRF24_writeReg' declared 'static' but never defined
+../HAL/NRF/nrf.h:92: warning: 'NRF24_writeRegMulti' declared 'static' but never defined
+../HAL/NRF/nrf.h:98: warning: 'NRF24_readReg' declared 'static' but never defined
+../HAL/NRF/nrf.h:104: warning: 'NRF24_readRegMulti' declared 'static' but never defined
+../HAL/NRF/nrf.h:110: warning: 'NRF24_sendCmd' declared 'static' but never defined
+../HAL/NRF/nrf.h:116: warning: 'NRF24_CSN_select' declared 'static' but never defined
+../HAL/NRF/nrf.h:122: warning: 'NRF24_CSN_unselect' declared 'static' but never defined
+../HAL/NRF/nrf.h:128: warning: 'NRF24_chipEnable' declared 'static' but never defined
+../HAL/NRF/nrf.h:134: warning: 'NRF24_chipDisable' declared 'static' but never defined
+Finished building: ../Controller_APP.c
+ 
+Building target: ControllerUnit.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ControllerUnit.map -mmcu=atmega32 -o "ControllerUnit.elf"  ./MCAL/USART/usart.o  ./MCAL/SPI/spi.o  ./MCAL/GPIO/gpio.o  ./MCAL/ADC/adc.o  ./HAL/POT/pot.o  ./HAL/NRF/nrf.o  ./HAL/LEDS/LEDs.o  ./HAL/BUTTONS/buttons.o  ./Controller_APP.o   
+Finished building target: ControllerUnit.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ControllerUnit.elf  >"ControllerUnit.lss"
+Finished building: ControllerUnit.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ControllerUnit.elf  "ControllerUnit.hex"
+Finished building: ControllerUnit.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ControllerUnit.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9314 bytes (28.4% Full)
+(.text + .data + .bootloader)
+
+Data:         20 bytes (1.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:58:16 **** Incremental Build of configuration Debug for project CarUnit ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CarUnit.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9260 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:58:17 **** Incremental Build of configuration Debug for project ControllerUnit ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ControllerUnit.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9314 bytes (28.4% Full)
+(.text + .data + .bootloader)
+
+Data:         20 bytes (1.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:58:27 **** Incremental Build of configuration Debug for project CarUnit ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CarUnit.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9260 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:58:27 **** Incremental Build of configuration Debug for project ControllerUnit ****
+make all 
+Building file: ../HAL/NRF/nrf.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/NRF/nrf.d" -MT"HAL/NRF/nrf.o" -c -o "HAL/NRF/nrf.o" "../HAL/NRF/nrf.c"
+In file included from ../HAL/NRF/nrf.c:16:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/NRF/nrf.h:104: warning: 'NRF24_readRegMulti' declared 'static' but never defined
+Finished building: ../HAL/NRF/nrf.c
+ 
+Building target: ControllerUnit.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ControllerUnit.map -mmcu=atmega32 -o "ControllerUnit.elf"  ./MCAL/USART/usart.o  ./MCAL/SPI/spi.o  ./MCAL/GPIO/gpio.o  ./MCAL/ADC/adc.o  ./HAL/POT/pot.o  ./HAL/NRF/nrf.o  ./HAL/LEDS/LEDs.o  ./HAL/BUTTONS/buttons.o  ./Controller_APP.o   
+Finished building target: ControllerUnit.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ControllerUnit.elf  >"ControllerUnit.lss"
+Finished building: ControllerUnit.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ControllerUnit.elf  "ControllerUnit.hex"
+Finished building: ControllerUnit.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ControllerUnit.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9196 bytes (28.1% Full)
+(.text + .data + .bootloader)
+
+Data:         20 bytes (1.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:58:36 **** Incremental Build of configuration Debug for project CarUnit ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CarUnit.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9260 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:58:36 **** Incremental Build of configuration Debug for project ControllerUnit ****
+make all 
+Building file: ../HAL/NRF/nrf.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/NRF/nrf.d" -MT"HAL/NRF/nrf.o" -c -o "HAL/NRF/nrf.o" "../HAL/NRF/nrf.c"
+In file included from ../HAL/NRF/nrf.c:16:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/NRF/nrf.c
+ 
+Building file: ../Controller_APP.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Controller_APP.d" -MT"Controller_APP.o" -c -o "Controller_APP.o" "../Controller_APP.c"
+In file included from ../Controller_APP.c:18:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/NRF/nrf.h:86: warning: 'NRF24_writeReg' declared 'static' but never defined
+../HAL/NRF/nrf.h:92: warning: 'NRF24_writeRegMulti' declared 'static' but never defined
+../HAL/NRF/nrf.h:98: warning: 'NRF24_readReg' declared 'static' but never defined
+../HAL/NRF/nrf.h:104: warning: 'NRF24_sendCmd' declared 'static' but never defined
+../HAL/NRF/nrf.h:110: warning: 'NRF24_CSN_select' declared 'static' but never defined
+../HAL/NRF/nrf.h:116: warning: 'NRF24_CSN_unselect' declared 'static' but never defined
+../HAL/NRF/nrf.h:122: warning: 'NRF24_chipEnable' declared 'static' but never defined
+../HAL/NRF/nrf.h:128: warning: 'NRF24_chipDisable' declared 'static' but never defined
+Finished building: ../Controller_APP.c
+ 
+Building target: ControllerUnit.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ControllerUnit.map -mmcu=atmega32 -o "ControllerUnit.elf"  ./MCAL/USART/usart.o  ./MCAL/SPI/spi.o  ./MCAL/GPIO/gpio.o  ./MCAL/ADC/adc.o  ./HAL/POT/pot.o  ./HAL/NRF/nrf.o  ./HAL/LEDS/LEDs.o  ./HAL/BUTTONS/buttons.o  ./Controller_APP.o   
+Finished building target: ControllerUnit.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ControllerUnit.elf  >"ControllerUnit.lss"
+Finished building: ControllerUnit.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ControllerUnit.elf  "ControllerUnit.hex"
+Finished building: ControllerUnit.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ControllerUnit.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9196 bytes (28.1% Full)
+(.text + .data + .bootloader)
+
+Data:         20 bytes (1.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:58:38 **** Incremental Build of configuration Debug for project CarUnit ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CarUnit.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9260 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:58:38 **** Incremental Build of configuration Debug for project ControllerUnit ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ControllerUnit.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9196 bytes (28.1% Full)
+(.text + .data + .bootloader)
+
+Data:         20 bytes (1.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

@@ -1,0 +1,11 @@
+21:23:40 **** Incremental Build of configuration Debug for project Servo test ****
+make all 
+Building target: Servo test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Servo test.map -mmcu=atmega32 -o "Servo test.elf"  ./test.o   
+avr-gcc.exe: test.map: No such file or directory
+make: *** [Servo test.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+21:23:40 Build Failed. 1 errors, 0 warnings. (took 138ms)
+

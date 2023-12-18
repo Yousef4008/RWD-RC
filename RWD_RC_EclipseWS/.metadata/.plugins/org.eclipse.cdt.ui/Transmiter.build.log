@@ -1,0 +1,20 @@
+03:03:29 **** Incremental Build of configuration Debug for project Transmiter ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Transmiter.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9314 bytes (28.4% Full)
+(.text + .data + .bootloader)
+
+Data:         20 bytes (1.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+03:03:29 Build Finished. 0 errors, 0 warnings. (took 149ms)
+

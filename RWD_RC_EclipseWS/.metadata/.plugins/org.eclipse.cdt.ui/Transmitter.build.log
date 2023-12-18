@@ -1,0 +1,102 @@
+13:02:02 **** Build of configuration Debug for project Transmitter ****
+make all 
+Building file: ../MCAL/SPI/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/SPI/spi.d" -MT"MCAL/SPI/spi.o" -c -o "MCAL/SPI/spi.o" "../MCAL/SPI/spi.c"
+Finished building: ../MCAL/SPI/spi.c
+ 
+Building file: ../MCAL/GPIO/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL/GPIO/gpio.d" -MT"MCAL/GPIO/gpio.o" -c -o "MCAL/GPIO/gpio.o" "../MCAL/GPIO/gpio.c"
+Finished building: ../MCAL/GPIO/gpio.c
+ 
+Building file: ../HAL/NRF/nrf.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/NRF/nrf.d" -MT"HAL/NRF/nrf.o" -c -o "HAL/NRF/nrf.o" "../HAL/NRF/nrf.c"
+In file included from ../HAL/NRF/nrf.c:16:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/NRF/nrf.c:143: warning: 'NRF24_readRegMulti' defined but not used
+Finished building: ../HAL/NRF/nrf.c
+ 
+Building file: ../APP/Receiver.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"APP/Receiver.d" -MT"APP/Receiver.o" -c -o "APP/Receiver.o" "../APP/Receiver.c"
+In file included from ../APP/Receiver.h:13,
+                 from ../APP/Receiver.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../APP/../HAL/NRF/nrf.h:86: warning: 'NRF24_writeReg' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:92: warning: 'NRF24_writeRegMulti' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:98: warning: 'NRF24_readReg' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:104: warning: 'NRF24_readRegMulti' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:110: warning: 'NRF24_sendCmd' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:116: warning: 'NRF24_CSN_select' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:122: warning: 'NRF24_CSN_unselect' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:128: warning: 'NRF24_chipEnable' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:134: warning: 'NRF24_chipDisable' declared 'static' but never defined
+Finished building: ../APP/Receiver.c
+ 
+Building file: ../APP/Transmitter.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"APP/Transmitter.d" -MT"APP/Transmitter.o" -c -o "APP/Transmitter.o" "../APP/Transmitter.c"
+In file included from ../APP/Transmitter.h:13,
+                 from ../APP/Transmitter.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../APP/../HAL/NRF/nrf.h:86: warning: 'NRF24_writeReg' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:92: warning: 'NRF24_writeRegMulti' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:98: warning: 'NRF24_readReg' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:104: warning: 'NRF24_readRegMulti' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:110: warning: 'NRF24_sendCmd' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:116: warning: 'NRF24_CSN_select' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:122: warning: 'NRF24_CSN_unselect' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:128: warning: 'NRF24_chipEnable' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:134: warning: 'NRF24_chipDisable' declared 'static' but never defined
+Finished building: ../APP/Transmitter.c
+ 
+Building file: ../APP.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"APP.d" -MT"APP.o" -c -o "APP.o" "../APP.c"
+In file included from ../APP/Receiver.h:13,
+                 from ../APP.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../APP/../HAL/NRF/nrf.h:86: warning: 'NRF24_writeReg' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:92: warning: 'NRF24_writeRegMulti' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:98: warning: 'NRF24_readReg' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:104: warning: 'NRF24_readRegMulti' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:110: warning: 'NRF24_sendCmd' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:116: warning: 'NRF24_CSN_select' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:122: warning: 'NRF24_CSN_unselect' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:128: warning: 'NRF24_chipEnable' declared 'static' but never defined
+../APP/../HAL/NRF/nrf.h:134: warning: 'NRF24_chipDisable' declared 'static' but never defined
+Finished building: ../APP.c
+ 
+Building target: Transmitter.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Transmitter.map -mmcu=atmega32 -o "Transmitter.elf"  ./MCAL/SPI/spi.o  ./MCAL/GPIO/gpio.o  ./HAL/NRF/nrf.o  ./APP/Receiver.o ./APP/Transmitter.o  ./APP.o   
+Finished building target: Transmitter.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Transmitter.elf  >"Transmitter.lss"
+Finished building: Transmitter.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Transmitter.elf  "Transmitter.hex"
+Finished building: Transmitter.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Transmitter.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7614 bytes (23.2% Full)
+(.text + .data + .bootloader)
+
+Data:         22 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+13:02:03 Build Finished. 0 errors, 32 warnings. (took 798ms)
+

@@ -1,0 +1,20 @@
+13:48:48 **** Incremental Build of configuration Debug for project NRF_Car_Uint ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 NRF_Car_Uint.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7800 bytes (23.8% Full)
+(.text + .data + .bootloader)
+
+Data:         29 bytes (1.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+13:48:49 Build Finished. 0 errors, 0 warnings. (took 130ms)
+

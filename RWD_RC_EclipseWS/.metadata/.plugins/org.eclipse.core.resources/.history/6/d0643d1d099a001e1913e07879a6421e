@@ -1,0 +1,25 @@
+/************************************************************************************
+ * 																					*
+ * 				           Created By : Abdelrhman Khaled                           *
+ * 				           Project : NRF Module Car                                 *
+ * 																					*
+ ***********************************************************************************/
+
+#ifndef ALL_PROJECT_FLAGS_H_
+#define ALL_PROJECT_FLAGS_H_
+
+/*******************************************************************************
+ *                                Definitions                                  *
+ *******************************************************************************/
+
+#define CAR_MOTION_FORWARD    0 /*this preprocessor for make a car move forward*/
+
+#define CAR_MOTION_BACKWARD   1 /*this preprocessor for make a car move backward*/
+
+#define CAR_START_MOTION      2	/*this preprocessor for make a car start motion*/
+
+#define CAR_BUZZER            3 /*this preprocessor for make a turn on the buzzer*/
+
+#define CAR_AUTO_PARKING      4 /*Soon , now put it position equal 0*/
+
+#endif /* ALL_PROJECT_FLAGS_H_ */

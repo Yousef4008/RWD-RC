@@ -1,0 +1,99 @@
+/*
+ * APP.c
+ *
+ *  Created on: Nov 5, 2023
+ *      Author: Youssif Hossam
+ */
+#include "HAL/LEDS/LEDs.h"
+#include "HAL/L293D/l293d.h"
+#include "HAL/SERVO/servo.h"
+#include "HAL/NRF/nrf.h"
+#include "HAL/BUZZER/buzzer.h"
+#include "MCAL/GPIO/gpio.h"
+#include <util/delay.h>
+#include <avr/io.h>
+
+uint8 tx_address[] ={0xEE,0xDD,0xCC,0xBB,0xAA};
+uint8 tx_data[2] = {'A','B'};
+uint8 tx_data2[2] = {'C','D'};
+
+int main(void){
+
+	//uint16 counter = 0;
+	//G_LED_init();
+	R_LED_init();
+	NRF24_init();
+	GPIO_setupPinDirection(PORTC_ID , PIN1_ID , PIN_INPUT);
+	GPIO_writePin(PORTC_ID , PIN1_ID , LOGIC_HIGH);
+	//SERVO_init();
+	//BUZZER_init();
+	//L293D_Init(CHANNEL1_MODE);
+
+	//G_LED_on();
+
+	NRF24_txMode(tx_address , 10);
+	//L293D_Rotate(CHANNEL1_MODE , CW);
+
+	while(1){
+
+		//BUZZER_on();
+		NRF24_init();
+		NRF24_txMode(tx_address , 10);
+		//_delay_ms(50);
+		if(!GPIO_readPin(PORTC_ID , PIN1_ID)){
+			if(NRF_transmit(tx_data))
+				R_LED_off();
+		}
+		else{
+			NRF_transmit(tx_data2);
+			R_LED_on();
+
+		}
+		_delay_ms(50);
+		//		BUZZER_off();
+		//		for(counter = 600 ; counter <2400 ; counter += 50){
+		//			SERVO_setDegree(counter);
+		//			_delay_ms(50);
+		//		}
+		//		for(counter = 2400 ; counter >60 ; counter -= 50){
+		//			SERVO_setDegree(counter);
+		//			_delay_ms(50);
+		//		}
+
+	}
+
+
+	//	while(1){
+	//		received_data = UART_recieveByte();
+	//		if(received_data & (1<<7)){
+	//khjbuv0
+	//			if((received_data & (1<k+ZZ<0)) && (received_data & (1<<3))){
+	//				L293D_Rotate(1 , CW);
+	//			}
+	//			else if((received_data & (1<<0)) && (received_data & (1<<4))){
+	//				L293D_Rotate(1 , A_CW);
+	//			}
+	//			else{
+	//				L293D_Rotate(1 , OFF);
+	//			}
+	//
+	//			if(received_data & (1<<1))
+	//				BUZZER_on();
+	//			else
+	//				BUZZER_off();
+	//
+	////			if(received_data & (1<<2)){
+	////
+	////			}
+	////			else{
+	////
+	////			}
+	//
+	//		}
+	//		else{
+	//			received_data = (uint16)(received_data*180)/100;
+	//			SERVO_setDegree(received_data);
+	//		}
+	//	}
+	return 0;
+}

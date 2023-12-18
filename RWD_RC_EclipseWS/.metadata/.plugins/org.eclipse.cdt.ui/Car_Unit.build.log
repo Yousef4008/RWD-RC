@@ -1,0 +1,20 @@
+00:14:47 **** Build of configuration Debug for project Car_Unit ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Unit.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9378 bytes (28.6% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+00:14:47 Build Finished. 0 errors, 0 warnings. (took 163ms)
+

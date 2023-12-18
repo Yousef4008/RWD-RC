@@ -1,0 +1,20 @@
+00:58:38 **** Incremental Build of configuration Debug for project CarUnit ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 CarUnit.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9260 bytes (28.3% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+00:58:38 Build Finished. 0 errors, 0 warnings. (took 133ms)
+

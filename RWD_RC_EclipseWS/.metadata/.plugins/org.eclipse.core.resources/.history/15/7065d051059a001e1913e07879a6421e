@@ -1,0 +1,105 @@
+ /*	____________________________________________________________________________
+  |																			    |
+  | APP: Car Unit														 	    |
+  |																			    |
+  | File Name: APP.c														    |
+  |																			    |
+  | Description: Source file for the car unit							        |
+  |																			    |
+  | Author: Youssif Hossam													    |
+  |_____________________________________________________________________________|
+*/
+#include "HAL/LEDS/LEDs.h"
+#include "HAL/L293D/l293d.h"
+#include "HAL/SERVO/servo.h"
+#include "HAL/NRF/nrf.h"
+#include "HAL/BUZZER/buzzer.h"
+#include "MCAL/GPIO/gpio.h"
+#include <util/delay.h>
+#include <avr/io.h>
+
+uint8 rx_address[] ={0xEE,0xDD,0xCC,0xBB,0xAA};
+uint8 rx_data[2] = {0,0};
+
+
+
+int main(void){
+
+	uint16 degree = 0;
+
+	G_LED_init();
+	R_LED_init();
+
+	SERVO_init();
+	BUZZER_init();
+	L293D_Init(CHANNEL1_MODE);
+
+
+
+	G_LED_on();
+	R_LED_on();
+	BUZZER_on();
+	_delay_ms(500);
+	G_LED_off();
+	R_LED_off();
+	BUZZER_off();
+
+	NRF24_init();
+	NRF24_rxMode(rx_address , 10);
+
+	while(1){
+
+		NRF24_init();
+		NRF24_rxMode(rx_address , 10);
+
+		rx_data[0] = 50;
+		rx_data[1] = 0;
+
+		if(NRF24_isDataAvailable(1)){
+
+			NRF24_receive(rx_data);
+			R_LED_on();
+
+
+			degree = (uint16)(rx_data[0])*10 + 800;
+
+			SERVO_setDegree(degree);
+
+			if((rx_data[1] & (1<<1)) && (rx_data[1] & (1<<3))){
+				G_LED_on();
+				L293D_Rotate(1 , CW);
+				//				_delay_ms(10);
+			}
+			else if((rx_data[1] & (1<<1)) && (rx_data[1] & (1<<4))){
+				G_LED_on();
+				L293D_Rotate(1 , A_CW);
+				//				_delay_ms(10);
+			}
+			else{
+				L293D_Rotate(1 , OFF);
+				//				_delay_ms(10);
+			}
+
+			if(rx_data[1] & (1<<2)){
+				G_LED_on();
+				BUZZER_on();
+				//				_delay_ms(10);
+			}
+			else
+				BUZZER_off();
+
+			if(rx_data[1] & (1<<0)){
+				G_LED_on();
+			}
+			else{
+
+			}
+			G_LED_off();
+		}
+		else{
+			R_LED_off();
+		}
+
+	}
+	return 0;
+}

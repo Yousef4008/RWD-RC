@@ -1,0 +1,25 @@
+/************************************************************************************
+ * 																					*
+ * 				           Created By : Abdelrhman Khaled                           *
+ * 				           Project : NRF Module Car                                 *
+ * 																					*
+ ***********************************************************************************/
+
+#ifndef ALL_PROJECT_FLAGS_H_
+#define ALL_PROJECT_FLAGS_H_
+
+/*******************************************************************************
+ *                                Definitions                                  *
+ *******************************************************************************/
+
+#define PUSH_BUTTON_1    		0 	/*this preprocessor for make a car move forward*/
+
+#define PUSH_BUTTON_2   		1 	/*this preprocessor for make a car move backward*/
+
+#define PUSH_BUTTON_3      		2	/*this preprocessor for make a car start motion*/
+
+#define TOGGLE_SWITCH_UP      	3 	/*this preprocessor for make a turn on the buzzer*/
+
+#define TOGGLE_SWITCH_DOWN      4 	/*Soon , now put it position equal 0*/
+
+#endif /* ALL_PROJECT_FLAGS_H_ */

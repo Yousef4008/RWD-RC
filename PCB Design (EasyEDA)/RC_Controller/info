@@ -1,0 +1,284 @@
+{
+  "uuid": "b35e059764dfed9e1a8ffd6d0f01fc2a",
+  "path": "Offline/RC_Controller",
+  "name": "RC_Controller",
+  "content": "",
+  "created_at": "2023-11-12 23:33:20",
+  "updated_at": "2023-12-18 02:04:27",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "c83e382047ac8fb91c8cf6d55e5fb4b4",
+      "title": "Schematic",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "8bcec3abc35d4b6785dcc09d91d132f0": 1,
+        "e943c23b524147eeac6f9457287a783e": 2,
+        "595f1b159cbb1fc2159315f85f2042a1": 1,
+        "35725e3e9b8c4e4397618de62b344051": 1,
+        "09ca1b1df4f82cd6541f0f6033a0dd28": 1,
+        "dfb11eb13335d516877368609ee22f70": 2,
+        "a1a68e8402b9461199345d2cae776c3f": 2,
+        "56f8b2b64a544f3d820bc0399720da54": 1,
+        "3721972c581d4f99b226effb1db7a790": 1,
+        "5a992ce9f0b748e6aace6a060c65006a": 1,
+        "03d09d5fa13f4cba835d55479e7b772a": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "3_PUSH_BUTTONS",
+          1,
+          "CONN-TH_3P-P5.00_WJ126V-5.0-3P",
+          "3_PUSH_BUTTONS",
+          {
+            "Supplier": "LCSC",
+            "Manufacturer": "KANGNEX(康奈克斯电气)",
+            "Manufacturer Part": "WJ126V-5.0-3P",
+            "Supplier Part": "C8401",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C8401&%26type=1&ref=editor",
+            "spiceSymbolName": "WJ126V-5.0-3P",
+            "puuid": "7e8815a1e0b2432e94e38fdef8255f1e",
+            "uuid": "dfb11eb13335d516877368609ee22f70"
+          }
+        ],
+        [
+          "2.3kHz",
+          1,
+          "BUZ-TH_BD12.0-P7.60-D0.6-FD",
+          "BUZZER1",
+          {
+            "Supplier": "LCSC",
+            "Manufacturer": "华能",
+            "Manufacturer Part": "TMB12A05",
+            "Supplier Part": "C96093",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C96093&%26type=1&ref=editor",
+            "spiceSymbolName": "TMB12A05",
+            "puuid": "4937126739894c52921de221c4760bbc",
+            "uuid": "5a992ce9f0b748e6aace6a060c65006a"
+          }
+        ],
+        [
+          "10uF",
+          1,
+          "CAP-TH_BD5.0-P2.00-D0.5-FD-1",
+          "C1",
+          {
+            "Contributor": "lcsc",
+            "Supplier": "LCSC",
+            "Supplier Part": "C724632",
+            "Manufacturer": "AISHI(艾华集团)",
+            "Manufacturer Part": "EGH1HM100D11OT",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C724632&%26type=1&ref=editor",
+            "spiceSymbolName": "EGH1HM100D11OT",
+            "puuid": "0df1d8dcad404c8fb913edb9c9072ff6",
+            "uuid": "03d09d5fa13f4cba835d55479e7b772a"
+          }
+        ],
+        [
+          "JL124D-35002G01",
+          2,
+          "CONN-TH_2P-P3.50_JL124D-35002G01",
+          "INPUT,TOGGLE_SW",
+          {
+            "Contributor": "LCSC",
+            "Supplier": "LCSC",
+            "Supplier Part": "C415432",
+            "Manufacturer": "JILN(锦凌)",
+            "Manufacturer Part": "JL124D-35002G01",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C415432&%26type=1&ref=editor",
+            "spiceSymbolName": "JL124D-35002G01",
+            "puuid": "217a70377f7a474f8966ef43298e33a0",
+            "uuid": "e943c23b524147eeac6f9457287a783e"
+          }
+        ],
+        [
+          "LED-TH-3mm_G",
+          1,
+          "LED-TH_BD3.0_GREEN",
+          "LED1",
+          {
+            "Manufacturer": "EVERLIGHT(台湾亿光)",
+            "Manufacturer Part": "204-10SYGD/S530-E3",
+            "Supplier Part": "C85161",
+            "Supplier": "",
+            "link": "",
+            "Contributor": "LCEDA_Lib",
+            "spiceSymbolName": "LED-TH-3mm_G",
+            "puuid": "52107c2975c74633a8d8f531ccb01bc4",
+            "uuid": "56f8b2b64a544f3d820bc0399720da54"
+          }
+        ],
+        [
+          "LED-TH-3mm_R",
+          1,
+          "LED-TH_BD3.0_RED",
+          "LED2",
+          {
+            "Manufacturer": "EVERLIGHT(台湾亿光)",
+            "Manufacturer Part": "204-10SDRD/S530-A3-L",
+            "Supplier Part": "C84774",
+            "Supplier": "LCSC",
+            "link": "",
+            "Contributor": "LCEDA_Lib",
+            "spiceSymbolName": "LED-TH-3mm_R",
+            "puuid": "bec79a4ea65a4f65ba290a03b598a762",
+            "uuid": "3721972c581d4f99b226effb1db7a790"
+          }
+        ],
+        [
+          "NRF24L01",
+          1,
+          "WIRELM-SMD_NRF24L01",
+          "NRF24L01",
+          {
+            "Supplier": "LCSC",
+            "Manufacturer": "Ai-Thinker(安信可)",
+            "Manufacturer Part": "NF-04",
+            "Supplier Part": "C90751",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C90751&%26type=1&ref=editor",
+            "spiceSymbolName": "NRF24L01",
+            "puuid": "b4cb6e6f44a64822b1a75e418bd409f5",
+            "uuid": "595f1b159cbb1fc2159315f85f2042a1"
+          }
+        ],
+        [
+          "WJ126V-5.0-3P",
+          1,
+          "CONN-TH_3P-P5.00_WJ126V-5.0-3P",
+          "POT",
+          {
+            "Supplier": "LCSC",
+            "Manufacturer": "KANGNEX(康奈克斯电气)",
+            "Manufacturer Part": "WJ126V-5.0-3P",
+            "Supplier Part": "C8401",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C8401&%26type=1&ref=editor",
+            "spiceSymbolName": "WJ126V-5.0-3P",
+            "puuid": "7e8815a1e0b2432e94e38fdef8255f1e",
+            "uuid": "dfb11eb13335d516877368609ee22f70"
+          }
+        ],
+        [
+          "330",
+          2,
+          "R_AXIAL-0.3",
+          "R330,RES330",
+          {
+            "Supplier Part": "",
+            "Supplier": "",
+            "Contributor": "LCEDA_Lib",
+            "spiceSymbolName": "R_AXIAL-0.3_US",
+            "Manufacturer Part": "",
+            "puuid": "3eb1249f3ebb4284ae221b0379016582",
+            "uuid": "a1a68e8402b9461199345d2cae776c3f"
+          }
+        ],
+        [
+          "L7805CV-HXY",
+          1,
+          "TO-220-3_L10.0-W4.5-P2.54-L",
+          "REG_5",
+          {
+            "Contributor": "lcsc",
+            "Supplier": "LCSC",
+            "Supplier Part": "C7469132",
+            "Manufacturer": "HXY MOSFET(华轩阳电子)",
+            "Manufacturer Part": "L7805CV-HXY",
+            "link": "https://lcsc.com/eda_search?q=C7469132&%26type=1&ref=editor",
+            "spiceSymbolName": "L7805CV-HXY",
+            "puuid": "948e610cffd14df79f04c73832b1409b",
+            "uuid": "8bcec3abc35d4b6785dcc09d91d132f0"
+          }
+        ],
+        [
+          "ATMEGA32A-PU",
+          1,
+          "DIP-40_L52.3-W13.9-P2.54-LS15.2-BL",
+          "U4",
+          {
+            "Supplier": "LCSC",
+            "Manufacturer": "MICROCHIP(美国微芯)",
+            "Manufacturer Part": "ATMEGA32A-PU",
+            "Supplier Part": "C12703",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C12703&%26type=1&ref=editor",
+            "spiceSymbolName": "ATMEGA32A-PU",
+            "puuid": "b92daa500f004b90a2ea0718943f8a91",
+            "uuid": "09ca1b1df4f82cd6541f0f6033a0dd28"
+          }
+        ],
+        [
+          "LM1117T-3.3",
+          1,
+          "TO-220-3_L10.0-W4.5-P2.54-L",
+          "REG_3",
+          {
+            "Contributor": "LCSC",
+            "Supplier": "LCSC",
+            "Supplier Part": "C498321",
+            "Manufacturer": "HGSEMI",
+            "Manufacturer Part": "LM1117T-3.3",
+            "JLCPCB Part Class": "Extended Part",
+            "link": "https://lcsc.com/eda_search?q=C498321&%26type=1&ref=editor",
+            "spiceSymbolName": "LM1117T-3.3",
+            "puuid": "948e610cffd14df79f04c73832b1409b",
+            "uuid": "35725e3e9b8c4e4397618de62b344051"
+          }
+        ]
+      ],
+      "updateTime": 1702857867,
+      "createTime": 1699824800,
+      "histories": [],
+      "created_at": "2023-11-12 23:33:20",
+      "updated_at": "2023-12-18 02:04:27"
+    },
+    {
+      "uuid": "6ca17de14565c7dbbf00a828c7fc5a11",
+      "puuid": "b35e059764dfed9e1a8ffd6d0f01fc2a",
+      "title": "PCB_RC_Controller",
+      "filename": "PCB_RC_Controller.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "3eb1249f3ebb4284ae221b0379016582": 2,
+        "0df1d8dcad404c8fb913edb9c9072ff6": 1,
+        "52107c2975c74633a8d8f531ccb01bc4": 1,
+        "bec79a4ea65a4f65ba290a03b598a762": 1,
+        "7e8815a1e0b2432e94e38fdef8255f1e": 2,
+        "217a70377f7a474f8966ef43298e33a0": 2,
+        "b4cb6e6f44a64822b1a75e418bd409f5": 1,
+        "948e610cffd14df79f04c73832b1409b": 2,
+        "b92daa500f004b90a2ea0718943f8a91": 1,
+        "4937126739894c52921de221c4760bbc": 1
+      },
+      "BOM": [],
+      "updateTime": 1702857749,
+      "createTime": 1700339800,
+      "histories": [],
+      "created_at": "2023-11-18 22:36:40",
+      "updated_at": "2023-12-18 02:02:29"
+    }
+  ],
+  "sort": [],
+  "title": "RC_Controller",
+  "foldername": "RC_Controller",
+  "schfilename": "RC_Controller.json",
+  "schfilemtime": 1702857867383
+}

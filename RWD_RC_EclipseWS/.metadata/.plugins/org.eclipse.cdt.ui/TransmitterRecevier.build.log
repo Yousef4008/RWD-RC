@@ -1,0 +1,41 @@
+13:00:36 **** Incremental Build of configuration Debug for project TransmitterRecevier ****
+make all 
+Building file: ../HAL/NRF/nrf.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL/NRF/nrf.d" -MT"HAL/NRF/nrf.o" -c -o "HAL/NRF/nrf.o" "../HAL/NRF/nrf.c"
+In file included from ../HAL/NRF/nrf.c:16:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/NRF/nrf.c:143: warning: 'NRF24_readRegMulti' defined but not used
+Finished building: ../HAL/NRF/nrf.c
+ 
+Building target: TransmitterRecevier.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,TransmitterRecevier.map -mmcu=atmega32 -o "TransmitterRecevier.elf"  ./MCAL/SPI/spi.o  ./MCAL/GPIO/gpio.o  ./HAL/NRF/nrf.o  ./APP/Receiver.o ./APP/Transmitter.o  ./APP.o   
+Finished building target: TransmitterRecevier.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S TransmitterRecevier.elf  >"TransmitterRecevier.lss"
+Finished building: TransmitterRecevier.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex TransmitterRecevier.elf  "TransmitterRecevier.hex"
+Finished building: TransmitterRecevier.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 TransmitterRecevier.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7614 bytes (23.2% Full)
+(.text + .data + .bootloader)
+
+Data:         22 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+13:00:37 Build Finished. 0 errors, 2 warnings. (took 440ms)
+

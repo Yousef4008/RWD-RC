@@ -1,0 +1,49 @@
+03:03:28 **** Incremental Build of configuration Debug for project Receiver ****
+make all 
+Building file: ../APP.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"APP.d" -MT"APP.o" -c -o "APP.o" "../APP.c"
+In file included from ../APP.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/NRF/nrf.h:86: warning: 'NRF24_writeReg' declared 'static' but never defined
+../HAL/NRF/nrf.h:92: warning: 'NRF24_writeRegMulti' declared 'static' but never defined
+../HAL/NRF/nrf.h:98: warning: 'NRF24_readReg' declared 'static' but never defined
+../HAL/NRF/nrf.h:104: warning: 'NRF24_readRegMulti' declared 'static' but never defined
+../HAL/NRF/nrf.h:110: warning: 'NRF24_sendCmd' declared 'static' but never defined
+../HAL/NRF/nrf.h:116: warning: 'NRF24_CSN_select' declared 'static' but never defined
+../HAL/NRF/nrf.h:122: warning: 'NRF24_CSN_unselect' declared 'static' but never defined
+../HAL/NRF/nrf.h:128: warning: 'NRF24_chipEnable' declared 'static' but never defined
+../HAL/NRF/nrf.h:134: warning: 'NRF24_chipDisable' declared 'static' but never defined
+Finished building: ../APP.c
+ 
+Building target: Receiver.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Receiver.map -mmcu=atmega32 -o "Receiver.elf"  ./MCAL/USART/usart.o  ./MCAL/TIMER1/timer1.o  ./MCAL/SPI/spi.o  ./MCAL/GPIO/gpio.o  ./HAL/SERVO/servo.o  ./HAL/NRF/nrf.o  ./HAL/LEDS/LEDs.o  ./HAL/L293D/l293d.o  ./HAL/BUZZER/buzzer.o  ./APP.o   
+Finished building target: Receiver.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Receiver.elf  >"Receiver.lss"
+Finished building: Receiver.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Receiver.elf  "Receiver.hex"
+Finished building: Receiver.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Receiver.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9378 bytes (28.6% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+03:03:29 Build Finished. 0 errors, 10 warnings. (took 500ms)
+

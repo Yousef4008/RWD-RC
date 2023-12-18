@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Controller/APP.c&apos; to &apos;Controller_APP.c&apos;" description="Rename resource &apos;APP.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="APP.c" name="Controller_APP.c" stamp="1702508166876" updateReferences="true"/>
+</session>

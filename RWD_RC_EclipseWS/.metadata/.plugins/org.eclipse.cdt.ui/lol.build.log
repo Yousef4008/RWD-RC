@@ -1,0 +1,20 @@
+01:56:42 **** Incremental Build of configuration Debug for project lol ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 lol.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12722 bytes (38.8% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+01:56:42 Build Finished. 0 errors, 0 warnings. (took 145ms)
+

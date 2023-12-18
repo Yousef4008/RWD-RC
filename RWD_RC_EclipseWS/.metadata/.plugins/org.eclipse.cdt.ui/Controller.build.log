@@ -1,0 +1,49 @@
+00:56:08 **** Incremental Build of configuration Debug for project Controller ****
+make all 
+Building file: ../Controller_APP.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Controller_APP.d" -MT"Controller_APP.o" -c -o "Controller_APP.o" "../Controller_APP.c"
+In file included from ../Controller_APP.c:18:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/NRF/nrf.h:86: warning: 'NRF24_writeReg' declared 'static' but never defined
+../HAL/NRF/nrf.h:92: warning: 'NRF24_writeRegMulti' declared 'static' but never defined
+../HAL/NRF/nrf.h:98: warning: 'NRF24_readReg' declared 'static' but never defined
+../HAL/NRF/nrf.h:104: warning: 'NRF24_readRegMulti' declared 'static' but never defined
+../HAL/NRF/nrf.h:110: warning: 'NRF24_sendCmd' declared 'static' but never defined
+../HAL/NRF/nrf.h:116: warning: 'NRF24_CSN_select' declared 'static' but never defined
+../HAL/NRF/nrf.h:122: warning: 'NRF24_CSN_unselect' declared 'static' but never defined
+../HAL/NRF/nrf.h:128: warning: 'NRF24_chipEnable' declared 'static' but never defined
+../HAL/NRF/nrf.h:134: warning: 'NRF24_chipDisable' declared 'static' but never defined
+Finished building: ../Controller_APP.c
+ 
+Building target: Controller.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Controller.map -mmcu=atmega32 -o "Controller.elf"  ./MCAL/USART/usart.o  ./MCAL/SPI/spi.o  ./MCAL/GPIO/gpio.o  ./MCAL/ADC/adc.o  ./HAL/POT/pot.o  ./HAL/NRF/nrf.o  ./HAL/LEDS/LEDs.o  ./HAL/BUTTONS/buttons.o  ./Controller_APP.o   
+Finished building target: Controller.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Controller.elf  >"Controller.lss"
+Finished building: Controller.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Controller.elf  "Controller.hex"
+Finished building: Controller.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Controller.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9314 bytes (28.4% Full)
+(.text + .data + .bootloader)
+
+Data:         20 bytes (1.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+00:56:08 Build Finished. 0 errors, 10 warnings. (took 446ms)
+

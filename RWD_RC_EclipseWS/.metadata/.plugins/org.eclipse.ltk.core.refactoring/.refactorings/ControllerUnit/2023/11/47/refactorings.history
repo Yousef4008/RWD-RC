@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Transmiter/HAL/PUSH_BUTTONS&apos; to &apos;BUTTONS&apos;" description="Rename resource &apos;PUSH_BUTTONS&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="HAL/PUSH_BUTTONS" name="BUTTONS" stamp="1700785117081" updateReferences="true"/>
+</session>
